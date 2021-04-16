@@ -1,9 +1,12 @@
 import React from 'react';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
+    let history = useHistory();
     return (
         <div>
-            <h1>Landing Page</h1>
+            <Link to='/login'>Login</Link>
         </div>
     );
 }

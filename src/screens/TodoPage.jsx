@@ -1,27 +1,10 @@
 import React, {useState} from 'react';
 import '../screens/todoPage.css';
+import {Link} from 'react-router-dom'
+
 
 const TodoPage = () => {
-    const todosData = [
-        // {
-        //     id: 1,
-        //     name: 'Banani',
-        //     date: '02-02-2021',
-        //     status: true
-        // },
-        // {
-        //     id: 2,
-        //     name: 'Salami',
-        //     date: '02-02-2021',
-        //     status: true
-        // },
-        // {
-        //     id: 3,
-        //     name: 'Nadenica',
-        //     date: '02-02-2021',
-        //     status: true
-        // }
-    ];
+
 
     const [todos, setTodos] = useState([]);
     const [value, setValue] = useState('');
@@ -57,6 +40,7 @@ const TodoPage = () => {
 
     return (
         <div>
+            <Link to='/contacts'>To Contacts</Link>
             <h1>Todo Page</h1>
             <ul>
                 {todos.map((todo) => {

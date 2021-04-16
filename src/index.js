@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import TodoApp from './TodoApp';
+import {AppProvider} from './context/context'
 
 
-ReactDOM.render(<TodoApp />, document.getElementById('root'));
+ReactDOM.render(
+    <AppProvider>
+        <TodoApp />
+    </AppProvider>, document.getElementById('root'));
